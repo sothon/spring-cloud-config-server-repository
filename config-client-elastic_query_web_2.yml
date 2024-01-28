@@ -35,7 +35,7 @@ spring:
         registration:
           keycloak:
             client-id: 'elastic-query-web-client-2'
-            client-secret: '{cipher}1629fc024388abacde648d5d97dd650fba8a4562fc5cac3fb87f6ef94f86291e5cd0da6889ad2f616c0b49de792b262eec72103a679a046fc748f2b07c00603d'
+            client-secret: '{cipher}2a252c9d91859ced7c65309789127472599153beb7cff33c3b3085cb34dedfaf478658b2c451c1b00920f74aabfd1f4d51e4a74bdf5e31c67f6bfdd942a12f6a'
             authorization-grant-type: authorization_code
             redirect-uri: '{baseUrl}/login/oauth2/code/{registrationId}'
             scope: openid
