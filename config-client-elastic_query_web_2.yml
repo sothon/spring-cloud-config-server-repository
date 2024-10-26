@@ -35,13 +35,13 @@ spring:
         registration:
           keycloak:
             client-id: 'elastic-query-web-client-2'
-            client-secret: '{cipher}f601d25ea90297fd49910c6a8891a12e434aa3aeb5c45b2186ce95b4cb83f2db921ba6c6f40fb31f8e065d32f28c9ca20ebb20d4cee321bcfa4953982230257f'
+            client-secret: '{cipher}d0b1d9c6fe940c5d0f93264912d9008873ed465cbd4b0f9b77327a62f8471ea30e232541631d174686981efcf40c583731e5dd24dbe3b70d9f51cd36cbbcceea'
             authorization-grant-type: authorization_code
             redirect-uri: '{baseUrl}/login/oauth2/code/{registrationId}'
             scope: openid
         provider:
           keycloak:
-            issuerUri: http://localhost:9091/auth/realms/microservices-realm
+            issuerUri: http://localhost:8081/auth/realms/microservices-realm
 
 
 security:
