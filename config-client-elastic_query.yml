@@ -13,6 +13,10 @@ elastic-query-service:
     method: GET
     uri: "http://localhost:8187/kafka-streams-service/get-word-count-by-word/{word}"
     accept: ${elastic-query-service.webclient.accept-type}
+  query-from-analytics-database:
+    method: GET
+    uri: "http://localhost:8187/analytics-service/get-word-count-by-word/{word}"
+    accept: ${elastic-query-service.webclient.accept-type}
 
 server:
   port: 8183
@@ -30,7 +34,7 @@ spring:
         registration:
           keycloak:
             client-id: 'elastic-query-service'
-            client-secret: '{cipher}febcb4c6fa155e352d792e811a0b7cf2e93ca56e960e8e42e127c9eeaab941ba4043898e37f70f6f5ec4273497584b3272243261f49f3a7b6fd3c76f258275ae'
+            client-secret: '{cipher}87191dde8d9944c470ffe0f00f17134d40f659756915af9c8a9bc5dab0b80f8a71acf1d94642151714b37017648883a6a7ca4a995db650bb734b7a60c19ed110'
             authorizationGrantType: client_credentials
         provider:
           keycloak:
