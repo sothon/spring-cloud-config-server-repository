@@ -22,14 +22,12 @@ server:
   port: 8183
   servlet:
     context-path: /elastic-query-service
-
+    
 spring:
   cloud:
     loadbalancer:
       ribbon:
         enabled: false
-
-spring:
   security:
     oauth2:
       resourceserver:
