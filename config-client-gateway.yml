@@ -55,7 +55,7 @@ spring:
                 name: analyticsServiceCircuitBreaker
                 fallbackUri: forward:/fallback/analytics-fallback
         - id: kafka-streams-service
-          uri: lb://kafka-streams-service
+          uri: lb://localhost:8187
           predicates:
             - Path=/kafka-streams-service/**
           filters:
