@@ -25,7 +25,7 @@ spring:
           lowerCaseServiceId: true
       routes:
         - id: elastic-query-service
-          uri: lb://elastic-query-servic
+          uri: lb://elastic-query-service
           predicates:
             - Path=/elastic-query-service/**
           filters:
